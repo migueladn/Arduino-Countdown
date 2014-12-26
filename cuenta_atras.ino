@@ -28,7 +28,7 @@ void digital_2(void) {
   digitalWrite(c, LOW);
   digitalWrite(f, LOW);
 }
-void digital_3 {
+void digital_3(void) {
   unsigned char j;
   digitalWrite(g, HIGH);
   digitalWrite(d, HIGH);
@@ -54,7 +54,7 @@ void digital_4(void) {
 void digital_5(void) {
   unsigned char j;
   for (j = 7; j <= 9; j++) {
-    digitalWrite(j, HIGH),
+    digitalWrite(j, HIGH);
   }
   digitalWrite(c, HIGH);
   digitalWrite(d, HIGH);
@@ -66,7 +66,7 @@ void digital_5(void) {
 void digital_6(void) {
   unsigned char j;
   for (j = 7; j <= 11; j++) {
-    digitalWrite(j, HIGH),
+    digitalWrite(j, HIGH);
   }
   digitalWrite(j, HIGH);
   digitalWrite(c, HIGH);
@@ -77,7 +77,7 @@ void digital_6(void) {
 void digital_7(void) {
   unsigned char j;
   for (j = 5; j <= 7; j++) {
-    digitalWrite(j, HIGH),
+    digitalWrite(j, HIGH);
   }
   digitalWrite(dp, LOW);
   for (j = 8; j <= 11; j++) {
@@ -87,37 +87,61 @@ void digital_7(void) {
 void digital_8(void) {
   unsigned char j;
   for (j = 5; j <= 11; j++) {
-    digitalWrite(j, HIGH),
+    digitalWrite(j, HIGH);
   }
   digitalWrite(dp, LOW);
 }
 
+void digital_9(void) {
+  unsigned char j;
+  digitalWrite(a, HIGH);
+  digitalWrite(f,HIGH);
+  digitalWrite(g,HIGH);
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(e,LOW),
+  digitalWrite(d,LOW);
+  digitalWrite(dp, LOW);
+}
+
+void digital_0(void) {
+  
+  for (int j = 5; j <= 11; j++) {
+    digitalWrite(j, HIGH);
+  }
+  digitalWrite(g, LOW);
+}
 void setup() {
   int i;
-  for (j = 4; i<= 11; i++) {
+  for (i = 4; i<= 11; i++) {
     pinMode(i, OUTPUT);
   }
 }
 
 void loop(){
   while(1){
-    digital_1();
+    digital_9();
     delay(2000);
-    digital_2();
-    delay(1000);
-    digital_3();
-    delay(1000);
-    digital_4();
-    delay(1000);
-    digital_5();
-    delay(1000);
-    digital_6();
+    digital_8();
     delay(1000);
     digital_7();
     delay(1000);
-    digital_8();
+    digital_6();
+    delay(1000);
+    digital_5();
+    delay(1000);
+    digital_4();
+    delay(1000);
+    digital_3();
+    delay(1000);
+    digital_2();
+    delay(1000);
+    digital_1();
+    delay(1000);
+    digital_0();
     delay(1000);
   }
+
 }
 
 
